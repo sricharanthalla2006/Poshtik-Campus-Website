@@ -1,77 +1,102 @@
+```html
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <meta charset ="UTF-8">
-        <title>Poshtil Campus Menu</title>
-    </head>
-    <body>
-        <h1>Poshtil Campus Menu</h1>
-        <h2>Today's Healthy Ten</h2>
-<table border="1" bgcolor="lightyellow">
-    <tr bgcolor="yellow">
-        <th>Item</th>
-        <th>Price</th>
+<html lang="en">
 
-    </tr>
+<head>
+    <meta charset="UTF-8">
+    <title>Poshtil Campus Menu</title>
+</head>
 
-    <tr>
-        <td>Millets</td>
-        <td>100rs</td>
-    </tr>
+<body>
 
-    <tr>
-        <td>Barley Soup</td>
-        <td>120rs</td>
-    </tr>
+    <h1>Poshtil Campus Menu</h1>
+    <h2>Today's Healthy Ten</h2>
 
-    <tr>
-        <td>Vegetable Stir-Fry</td>
-        <td>150rs</td>
-    </tr>
+    <table border="1" bgcolor="lightyellow">
+        <tr bgcolor="yellow">
+            <th>Item</th>
+            <th>Price</th>
+        </tr>
 
-    <tr>
-        <td>Quinoa Salad</td>
-        <td>180rs</td>
-    </tr>
+        <tr><td>Millets</td><td>100rs</td></tr>
+        <tr><td>Barley Soup</td><td>120rs</td></tr>
+        <tr><td>Vegetable Stir-Fry</td><td>150rs</td></tr>
+        <tr><td>Quinoa Salad</td><td>180rs</td></tr>
+        <tr><td>Grilled Chicken</td><td>200rs</td></tr>
+        <tr><td>Fresh Fruit Bowl</td><td>100rs</td></tr>
+        <tr><td>Herbal Tea</td><td>50rs</td></tr>
+        <tr><td>Whole Grain Bread</td><td>30rs</td></tr>
+        <tr><td>Low-Fat Yogurt</td><td>80rs</td></tr>
+        <tr><td>Green Smoothie</td><td>120rs</td></tr>
+    </table>
 
-    <tr>
-        <td>Grilled Chicken</td>
-        <td>200rs</td>
-    </tr>
+    <hr>
 
-    <tr>
-        <td>Fresh Fruit Bowl</td>
-        <td>100rs</td>
-    </tr>
+    <h2>How to Order</h2>
 
-    <tr>
-        <td>Herbal Tea</td>
-        <td>50rs</td>
-    </tr>
+    <ol>
+        <li>Browse the menu online</li>
+        <li>Add items to your cart</li>
+        <li>Place your order or Mail your order</li>
+        <li>Collect your order at your block</li>
+    </ol>
 
-    <tr>
-        <td>Whole Grain Bread</td>
-        <td>30rs</td>
-    </tr>
+    <hr>
 
-    <tr>
-        <td>Low-Fat Yogurt</td>
-        <td>80rs</td>
-    </tr>
+    <h2>Order Form</h2>
 
-    <tr>
-        <td>Green Smoothie</td>
-        <td>120rs</td>
-    </tr>
-</table>
-        <hr
-        <h2>How to Order</h2>
-        <ol>
-            <li>Browse the menu online</li>
-            <li>Add items to your cart</li>
-            <li>Place your order or Mail your order</li>
-            <li>Collect your order at your block</li>
-        </ol>
+    <form>
+
+        <label>Name:</label>
+        <input type="text" name="name" required>
+        <br><br>
+
+        <label>Roll Number:</label>
+        <input type="text" name="rollno" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <br><br>
+
+        <label>Select Item:</label>
+        <select name="item">
+            <option>Millets</option>
+            <option>Barley Soup</option>
+            <option>Vegetable Stir-Fry</option>
+            <option>Quinoa Salad</option>
+            <option>Grilled Chicken</option>
+            <option>Fresh Fruit Bowl</option>
+            <option>Herbal Tea</option>
+            <option>Whole Grain Bread</option>
+            <option>Low-Fat Yogurt</option>
+            <option>Green Smoothie</option>
+        </select>
+        <br><br>
+
+        <label>Quantity:</label>
+        <input type="number" name="quantity" min="1" value="1">
+        <br><br>
+
+        <label>Order Method:</label>
+        <br>
+        <input type="radio" name="order" value="online"> Online
+        <input type="radio" name="order" value="mail"> Mail
+        <br><br>
+
+        <label>Delivery Block:</label>
+        <input type="text" name="block">
+        <br><br>
+
+        <label>Special Instructions:</label>
+        <br>
+        <textarea name="message" rows="4" cols="30"></textarea>
+        <br><br>
+
+        <input type="submit" value="Place Order">
+        <input type="reset" value="Clear">
+
+    </form>
         <a href="mailto:thallasricharan9@gmail.com">Mail your Order</a><br>
         <a href="dish.html">Dish of the Day</a><br>
         <a href="snack.html">Evening Snack Counter</a><br>
